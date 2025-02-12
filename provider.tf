@@ -8,7 +8,7 @@ terraform {
 
   required_version = ">= 1.2.0"
   backend "s3" {
-    bucket         = "myawsbucket-jan-22"  # Replace with your S3 bucket name
+    bucket         = "terraformstatefilesushfeb11"  # Replace with your S3 bucket name
     key            = "terraform.tfstate"          # State file location within the bucket
     region         = "var.region"                  # AWS region
   }
