@@ -23,6 +23,7 @@ phases:
 
   pre_build:
     commands:
+      - terraform init -backend=false
       - echo "Configuring AWS CLI..."
       - aws sts get-caller-identity
       - echo "Initializing Terraform..."
